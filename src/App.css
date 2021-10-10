@@ -14,12 +14,20 @@
 }
 
 .App-header {
-  background-color: #5e5e5e;
+  background-color: #999999;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
-  color: #ec6917;
+  align-items: center;
+  color: #00008b;
+}
+
+.Todolist-header {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  align-items: center;
 }
 
 .App-link {
@@ -28,5 +36,6 @@
 
 .svg_icons {
   transform: scale(1.5);
-  padding: 15;
+  padding: 20px;
+  margin: 20px;
 }
