@@ -19,7 +19,14 @@ function HomeHeader() {
   return (
     <div>
       <header className="App-header">
-        <Box style={{ padding: 2, maxWidth: "100%" }}>
+        <Box
+          style={{
+            padding: 2,
+            maxWidth: "100%",
+            marginBottom: 10,
+            marginTop: 10,
+          }}
+        >
           <Grid container spacing={2}>
             <Grid item>
               <Img src={BussinessPicture} alt="avatar" />
@@ -27,26 +34,26 @@ function HomeHeader() {
             <Grid item sm container>
               <Grid item xs direction="column" spacing={2}>
                 <Grid item>
-                  <Typography variant="h2" component="div">
+                  <Typography variant="h2" color="primary" component="div">
                     Brendan Murphy
                   </Typography>
                   <Box display="flex">
-                    <Typography variant="h4" gutterBottom>
+                    <Typography variant="h4" color="primary" gutterBottom>
                       Software Developer
                     </Typography>
-                    <Box display="flex" marginX="20px">
+                    <Box display="flex" marginX="14px">
                       <Link
                         to={{
                           pathname: "https://github.com/bmurf17",
                         }}
                         target="_blank"
                       >
-                        <IconButton size="small" className="svg_icons">
+                        <IconButton className="svg_icons">
                           <GitHub />
                         </IconButton>
                       </Link>
                     </Box>
-                    <Box display="flex" marginX="20px">
+                    <Box display="flex" marginX="14px">
                       <Link
                         to={{
                           pathname:
@@ -56,7 +63,6 @@ function HomeHeader() {
                       >
                         <IconButton
                           style={{ color: "ec6917" }}
-                          size="small"
                           className="svg_icons"
                         >
                           <LinkedIn />
