@@ -35,7 +35,7 @@ export function HomeTodoList() {
         <div>
           <header className="Todolist-header">
             <Box sx={{ alignItems: "center", display: "flex" }} marginY="6px">
-              <Typography variant="h5">Goals List</Typography>
+              <Typography variant="h4">Goals List</Typography>
             </Box>
           </header>
         </div>
@@ -43,11 +43,12 @@ export function HomeTodoList() {
           <Box sx={{ width: "100%", m: 2 }}>
             <LinearProgress
               variant="determinate"
+              style={{ height: 10, borderRadius: 5 }}
               value={(doneItem / TodoList.length) * 100}
             />
           </Box>
-          <Box sx={{ minWidth: 35 }}>
-            <Typography variant="body2" color="textSecondary">
+          <Box sx={{ minWidth: 35, marginRight: 2 }}>
+            <Typography variant="body1" color="textSecondary">
               {doneItem} / {TodoList.length}
             </Typography>
           </Box>

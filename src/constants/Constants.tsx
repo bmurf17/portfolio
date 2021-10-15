@@ -5,12 +5,24 @@ export interface Todo {
 
 export const TodoList: Todo[] = [
   {
-    text: "Write a React Native Todo List",
+    text: "Make a React Native Todo List",
     complete: false,
   },
   {
-    text: "Write a Bot to Manage my Fantasy Basketball Team",
-    complete: true,
+    text: "Make a Bot to Manage my Fantasy Basketball Team",
+    complete: false,
+  },
+  {
+    text: "Make an app to track all my fantasy football teams",
+    complete: false,
+  },
+  {
+    text: "Improve my book tracking website",
+    complete: false,
+  },
+  {
+    text: "Find more learning resources for Firebase and Google Cloud",
+    complete: false,
   },
 ];
 

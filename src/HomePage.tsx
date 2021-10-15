@@ -15,7 +15,7 @@ const Img = styled("img")({
   borderRadius: 150 / 2,
 });
 
-function HomeHeader() {
+function HomePage() {
   return (
     <div>
       <header className="App-header">
@@ -82,4 +82,4 @@ function HomeHeader() {
   );
 }
 
-export default HomeHeader;
+export default HomePage;
