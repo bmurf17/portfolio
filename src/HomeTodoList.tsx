@@ -23,7 +23,7 @@ export function HomeTodoList() {
   };
 
   var doneItem = 0;
-  TodoList.map((todo) => {
+  TodoList.forEach((todo) => {
     if (todo.complete) {
       doneItem++;
     }
