@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import BussinessPicture from "./Business Picture.png";
+import BussinessPicture from "./pictures/Business Picture.png";
 import { Grid, Box, IconButton, Typography } from "@material-ui/core";
 import { styled } from "@material-ui/styles";
 import { Link } from "react-router-dom";
@@ -72,7 +72,6 @@ function HomePage() {
                   </Box>
                 </Grid>
               </Grid>
-              <Grid item container></Grid>
             </Grid>
           </Grid>
         </Box>
