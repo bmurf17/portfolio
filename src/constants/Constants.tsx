@@ -2,6 +2,7 @@ import AutoOwnersInsurance from "../pictures/AutoOwnersInsurance.png";
 import UnitedShore from "../pictures/UnitedShore.png";
 import NavigatorTruckInsurance from "../pictures/NavigatorTruckInsurance.png";
 import CFL from "../pictures/CFL.png";
+import Hope from "../pictures/Hope.png";
 
 export interface Todo {
   text: string;
@@ -16,6 +17,36 @@ export interface Experience {
   description: string;
   dates: string;
 }
+
+export interface Education {
+  image: string;
+  school: string;
+  study: string;
+  date: string;
+}
+
+export const TodoList: Todo[] = [
+  {
+    text: "Make a React Native Todo List",
+    complete: false,
+  },
+  {
+    text: "Make a Bot to Manage my Fantasy Basketball Team",
+    complete: false,
+  },
+  {
+    text: "Make an app to track all my fantasy football teams",
+    complete: false,
+  },
+  {
+    text: "Improve my book tracking website",
+    complete: false,
+  },
+  {
+    text: "Find more learning resources for Firebase and Google Cloud",
+    complete: false,
+  },
+];
 
 export const ExperienceList: Experience[] = [
   {
@@ -56,26 +87,12 @@ export const ExperienceList: Experience[] = [
   },
 ];
 
-export const TodoList: Todo[] = [
+export const EducationList: Education[] = [
   {
-    text: "Make a React Native Todo List",
-    complete: false,
-  },
-  {
-    text: "Make a Bot to Manage my Fantasy Basketball Team",
-    complete: false,
-  },
-  {
-    text: "Make an app to track all my fantasy football teams",
-    complete: false,
-  },
-  {
-    text: "Improve my book tracking website",
-    complete: false,
-  },
-  {
-    text: "Find more learning resources for Firebase and Google Cloud",
-    complete: false,
+    image: Hope,
+    school: "Hope College",
+    study: "Major: Computer Science, Minor: Math",
+    date: "2017-2021",
   },
 ];
 
