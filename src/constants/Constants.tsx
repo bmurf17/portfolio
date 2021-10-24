@@ -3,6 +3,8 @@ import UnitedShore from "../pictures/UnitedShore.png";
 import NavigatorTruckInsurance from "../pictures/NavigatorTruckInsurance.png";
 import CFL from "../pictures/CFL.png";
 import Hope from "../pictures/Hope.png";
+import Portfolio from "../pictures/Portfolio.png";
+import BookTracker from "../pictures/BookTracker.png";
 
 export interface Todo {
   text: string;
@@ -23,6 +25,15 @@ export interface Education {
   school: string;
   study: string;
   date: string;
+}
+
+export interface Project {
+  image: string;
+  title: string;
+  description: string;
+  technolgies: string;
+  futureDevelopments: string;
+  link: string;
 }
 
 export const TodoList: Todo[] = [
@@ -93,6 +104,29 @@ export const EducationList: Education[] = [
     school: "Hope College",
     study: "Major: Computer Science, Minor: Math",
     date: "2017-2021",
+  },
+];
+
+export const ProjectList: Project[] = [
+  {
+    image: Portfolio,
+    title: "Portfolio",
+    description:
+      "This project is where I will update what I am working on. It will be a good place to track all of the work and improvements I am making.",
+    technolgies: "React, Typescript, Node.JS",
+    futureDevelopments:
+      "My first step will probably be connectiong to a backend. Then I will add another section for a personal blog. Throughout I will be working to improve my overall code quality and UX/UI",
+    link: "https://brendanmurphy-eb55d.web.app/",
+  },
+  {
+    image: BookTracker,
+    title: "Brendan's Book Tracker",
+    description:
+      "I put this website together to track the books I read. I really wanted to play around with some of the statistics on the books I read. Then I also want to be able to share what I am reading with other.",
+    technolgies: "React, Javascript, Node.JS, Firebase, and Google Cloud",
+    futureDevelopments:
+      "I am planning on implementing users next. After that I think it could be interseting to look into recommending future books. Lastly, I am planning on also improving the code quality and UX/UI",
+    link: "https://book-site-6b76c.web.app/",
   },
 ];
 
