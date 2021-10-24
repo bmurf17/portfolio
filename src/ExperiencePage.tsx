@@ -4,11 +4,10 @@ import "./App.css";
 import { ExperienceList } from "./constants/Constants";
 
 const Img = styled("img")({
-  marginLeft: 5,
+  marginLeft: 7,
   display: "block",
   width: 75,
   height: 75,
-  borderRadius: 150 / 2,
 });
 
 export default function ExperiencePage() {
@@ -22,7 +21,13 @@ export default function ExperiencePage() {
       <Container maxWidth="lg">
         {ExperienceList.map((experienceItem) => {
           return (
-            <Paper style={{ height: "100%", width: "100%" }}>
+            <Paper
+              style={{
+                height: "100%",
+                width: "100%",
+                paddingBottom: "1rem",
+              }}
+            >
               <Grid container spacing={2}>
                 <Grid item>
                   <Img src={experienceItem.image} alt="Auto" />
